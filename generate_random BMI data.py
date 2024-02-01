@@ -19,7 +19,7 @@ def generate_subject_data():
 subjects_data = [generate_subject_data() for _ in range(50)]
 
 # Write data to a CSV file
-with open('subjects_data.csv', 'w', newline='') as csvfile:
+with open('DATA/subjects_data.csv', 'w', newline='') as csvfile:
     fieldnames = ['Name', 'Length (cm)', 'Weight (kg)', 'Age (years)']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 

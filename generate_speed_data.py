@@ -25,7 +25,7 @@ for i in range(distance // 100):
     distances.append(distance_m)
 
 # Generate CSV file
-with open('running_data.csv', 'w', newline='') as csvfile:
+with open('DATA/running_data.csv', 'w', newline='') as csvfile:
     fieldnames = ['Distance (m)', 'Speed (m/s)']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
@@ -39,5 +39,5 @@ plt.title('Speed Variation During the Run')
 plt.xlabel('Distance (m)')
 plt.ylabel('Speed (m/s)')
 plt.grid(True)
-plt.savefig('running_speed_variation.png')  # Save the plot as an image
+plt.savefig('DATA/running_speed_variation.png')  # Save the plot as an image
 plt.show()
